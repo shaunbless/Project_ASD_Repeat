@@ -1,0 +1,86 @@
+ /*
+
+title: form.html styles
+by: Lashaun Owens
+for: 
+
+*/
+
+
+
+
+
+
+#home .ui-content {      
+background-image: linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.16, rgb(255,255,255)),
+	color-stop(0.48, rgb(196,196,196)),
+	color-stop(1, rgb(0,0,0))
+);
+
+      padding:10px}
+
+
+#account .ui-content {      
+background-image: linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.16, rgb(255,255,255)),
+	color-stop(0.48, rgb(196,196,196)),
+	color-stop(1, rgb(0,0,0))
+);
+
+      padding:10px}
+      
+#history .ui-content {      
+background-image: linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 16%, rgb(196,196,196) 48%, rgb(0,0,0) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.16, rgb(255,255,255)),
+	color-stop(0.48, rgb(196,196,196)),
+	color-stop(1, rgb(0,0,0))
+);
+
+      padding:10px}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    
+ P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}IMG.displayed2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    
+ P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}

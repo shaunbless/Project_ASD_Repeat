@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+        </script>
+        <!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/appstyles.css" type="text/css" />
+
+    </head><!--code begins here-->
+    <body>
+        <div data-role="page" data-theme="a" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Header
+                </h3>
+            </div>
+            <div data-role="content">
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page1" data-icon="star" data-iconpos="left">
+                    Register
+                </a>
+           <!--mag cover-->           </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page2" data-icon="star" data-iconpos="left">
+                    Login
+                </a>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        <div data-role="page" data-theme="a" id="page2">
+            <div data-theme="a" data-role="header">
+                <h4>
+                    Login
+                </h4>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page3" data-icon="star" data-iconpos="left">
+                    Home
+                </a>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Name
+                        </label>
+                        <input id="textinput3" placeholder="Name Here" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Email
+                        </label>
+                        <input id="textinput1" placeholder="Jb@bballs.com" value="" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            Password
+                        </label>
+                        <input id="textinput2" placeholder="Password " value="" type="password" />
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page3" data-icon="star" data-iconpos="left">
+                    Submit
+                </a>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        <div data-role="page" data-theme="a" id="page3">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Header
+                </h3>
+            </div>
+            <div data-role="content">
+                <div style="width: 288px; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea1">
+                            Comments
+                        </label>
+                        <textarea id="textarea1" placeholder="">
+                        </textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            Title
+                        </label>
+                        <input id="textinput4" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                        </legend>
+                        <input name="radiobuttons1" id="radio1" value="radio1" type="radio" />
+                        <label for="radio1">
+                            Tasty
+                        </label>
+                        <input name="radiobuttons1" id="radio2" value="radio2" type="radio" />
+                        <label for="radio2">
+                            no
+                        </label>
+                        <input name="radiobuttons1" id="radio3" value="radio3" type="radio" />
+                        <label for="radio3">
+                            Share
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home" class="ui-btn-active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="star" class="ui-btn-active">
+                                Food
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="arrow-u">
+                                Upload
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="info">
+                                Fav
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        <div data-role="page" id="page4">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Upload
+                </h3>
+            </div>
+            <div data-role="content">
+                <a data-role="button" data-transition="fade" href="#page3" data-icon="gear" data-iconpos="left">
+                    Submit
+                </a>
+                <div style="width: 288px; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img src="image2/lips2.jpeg" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
+                </div>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h3>
+                    camera
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
