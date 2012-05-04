@@ -1,13 +1,16 @@
-//mobile DOM loader ($) mobile method
-$('#info').live('pageinit', function(){
-	var rbform = $('#appform');
+//mobile DOM loader ($) for #rate page mobile method
+$('#rate').live('pageinit', function () {
+	var rateForm = $('#rateForm');
 	var	rberrorslink = $('#rberrorslink');
 	var formSave = $('#submit');
+	var d = new Date();
+	var key = (d.getTime());
 	
+	console.log("hi");
 	// save form function
 	formSave.on('click', function(){
 		// form validation in jqm
-		rbform.validate({
+		rateForm.validate({
 			invalidHandler: function(form, validator){
 				rberrorslink.click();
 				var html = '';
@@ -20,38 +23,17 @@ $('#info').live('pageinit', function(){
 				$("#signuperrors ul").html(html);
 			},
 			submitHandler: function(){
-				var data = rbform.serializeArray();
+				var data = rateForm.serializeArray();
 				storeData(data);
 				$.mobile.changePage($('#account'));
 			} 
-		}); 
-	}); 
-	var storeData = function (myData) {
+		});
+	})
+}); // ending #signup page load
+	
+var storeData = function (myData) {
 	    localStorage.setItem('signup_data', myData);
 	    alert("Your information has saved!");
 	};
-	
-var clearLink = $('#clear');
-	var data = localStorage.getItem('signup_data');
-	var editLink = $('#edit');
-	var clearData = function (myData) {
-		localStorage.clear('signup_data');
-	}; //ending clearData function
-	console.log("this page is working!");
-	// clearData function
-	clearLink.on('click', function(){
 
-		clearData(data);
-		alert("Data has been cleared");
-		$.mobile.changePage($('#account'));
-	
-	}); // ending clearLink function
-	
-	// change page to edit page
-	editLink.on('click', function (){
-		$.mobile.changePage($('#info'));
-		data;
-	});
-	
-});
 
