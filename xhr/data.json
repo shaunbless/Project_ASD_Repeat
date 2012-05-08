@@ -1,0 +1,50 @@
+{
+	"contacts":[{
+		"hot": "9/10",
+		"fav": "yes",
+		"comments": "I love this hairstyle!",
+		"email": "shaunbless@gmail.com"
+	},
+	{
+		"hot": "6/10",
+		"fav": "yes",
+		"comments": "This is ok!",
+		"email": "justblaze@gmail.com"
+	},
+	{
+		"hot": "9/10",
+		"fav": "yes",
+		"comments": "I love this hairstyle!",
+		"email": "dauntepaul@gmail.com"
+	},
+	{
+		"hot": "8/10",
+		"fav": "yes",
+		"comments": "She is rockin' this hairstyle!",
+		"email": "yourlove@gmail.com"
+	},
+	{
+		"hot": "4/10",
+		"fav": "no",
+		"comments": "This hairstyle is so so!",
+		"email": "mysister@gmail.com"
+	},
+	{
+		"hot": "9/10",
+		"fav": "yes",
+		"comments": "I love this hairstyle!",
+		"email": "brotherlylove@gmail.com"
+	},
+	{
+		"hot": "7/10",
+		"fav": "yes",
+		"comments": "This hairstyle is ok!",
+		"email": "godsangels@gmail.com"
+	},
+	{
+		"hot": "2/10",
+		"fav": "no",
+		"comments": "I hate this hairstyle!",
+		"email": "macbookmacker@gmail.com"
+	}
+]}

@@ -1,0 +1,26 @@
+<ratings>
+	<rate>
+		<hot>1/10</hot>
+		<fav>no</fav>
+		<comments>This hairstyle is horrible!</comments>
+		<email>shaunbless@gmail.com</email>
+	</rate>
+	<rate>
+		<hot>9/10</hot>
+		<fav>yes</fav>
+		<comments>This hairstyle is awesome!</comments>
+		<email>guru@gmail.com</email>
+	</rate>
+	<rate>
+		<hot>5/10</hot>
+		<fav>no</fav>
+		<comments>This hairstyle is so so!</comments>
+		<email>shayla123@gmail.com</email>
+	</rate>
+	<rate>
+		<hot>7/10</hot>
+		<fav>yes</fav>
+		<comments>I would walk the streets in this hairstyle!</comments>
+		<email>love2love@gmail.com</email>
+	</rate>
+</ratings>
