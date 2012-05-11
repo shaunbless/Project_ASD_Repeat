@@ -38,7 +38,7 @@ var storeData = function (myData) {
 	};
 	
 // mobile Dom loader ($) for #edit page mobile method
-$('#editFormPage').live('pageinit', function(){
+$('#editFormPage').live('pageshow', function(){
 	var formEdit = $('#editForm');
 	var	errorLink = $('#errlnk');
 	var sbtForm = $('#editSub');
@@ -47,7 +47,7 @@ $('#editFormPage').live('pageinit', function(){
 	sbtForm.on('click', function(){
 		console.log("works");
 		// form validation in jqm
-		editForm.validate({
+		formEdit.validate({
 			invalidHandler: function(form, validator){
 				errorLink.click();
 				var html = '';
@@ -62,7 +62,7 @@ $('#editFormPage').live('pageinit', function(){
 			submitHandler: function(){
 				var data = formEdit.serializeArray();
 				storeData(data);
-				console.log("");
+				console.log(data);
 				$.mobile.changePage($('#account'));
 			} // ending function for submitHandler
 		}); // ending function for rbform.validate
@@ -72,6 +72,30 @@ $('#editFormPage').live('pageinit', function(){
 	    localStorage.setItem('signup_data', myData);
 	    alert("Your information has saved!");
 	}; // ending storeData function
+});
+
+$('#account').live('pageinit', function () {
+	var displayLink = $('#display');
+	displayLink.on('click', function(){
+		for (var i = 0; i < localStorage.length; i++) {
+			var data = localStorage.getItem(localStorage.key(i));
+			var hot = data.value;
+			var fav = data.value;
+			var comments = data.value;
+			var email = data.value;
+			console.log(data);
+			$('<div class="individual">'+
+				'<ul class="inner">'+
+					'<li>Hotness: '+ hot +'</li>'+
+					'<li>Is this your favorite: '+ fav +'</li>'+
+					'<li>Comments: '+ comments +'</li>'+
+					'<li>Email: '+ email +'</li>'+
+		        '</ul>'+
+		        '</div>' 
+	        	  
+	        	).appendTo('#dataPlay');
+		};
+	});
 });
 
 // JSON List

@@ -116,7 +116,7 @@
             			<p>Walk the streets with this heat!</p>
             			</a>
             		</li>
-            		<div class="ui-grid-b">
+            		<div class="ui-grid-c">
             			<div class="ui-block-a">
 	            			<a href="#rate" id="rate" data-role="button">Rate This</a>
 	            		</div>
@@ -124,7 +124,10 @@
 	            			<a href="#editFormPage" id="edit" data-role="button">Edit Rating</a>
 	            		</div>
 	            		<div class="ui-block-c">
-	            			<a href="#delete" id="delete" data-role="button">Delete Rating</a>
+	            			<a href="#displayPage" id="display" data-role="button">Display Rating</a>
+            			</div>
+	            		<div class="ui-block-d">
+	            			<a href="#deletePage" id="delete" data-role="button">Delete Rating</a>
             			</div>
             		</div>
             		<li>
@@ -368,12 +371,28 @@
 	        		</div>
 	        		<div>
 	        			<label for="email">Enter your email to receive updates on this hairstyle!</label>
-	        			<input type="email" placeholder="email@email.com" id="email" />
+	        			<input type="email" name="email" value="" placeholder="email@email.com" id="email" />
 	        		</div>
 	        		<div>
 	        			<input type="submit" id="editSub" value="Submit" data-inline="true" />
 	        		</div>	
         		</form>
+        	</div>
+        </div>
+        
+        <!-- display page -->
+        <div data-role="page" id="displayPage">
+        	<div data-role="header" data-position="fixed">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		<div id="dataPlay">
+				</div>
+        	</div>
+        	
+        	<div data-role="footer" data-position="fixed">
+        		
         	</div>
         </div>
         
