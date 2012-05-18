@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/appstyles.css" type="text/css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+    </head><!--code begins here-->
+    <body>
+        <div data-role="page" data-theme="a" id="home">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    sHair
+                </h3>
+            </div>
+            
+            <div data-role="content">
+            <div>
+					<ul data-role="listview" data-inset="true"data-transition="fade" data-theme="b">
+						<li data-theme="b"data-icon="star" data-iconpos="left">
+							<a href="#login">
+							<h3>Login</h3>
+							</a>
+						</li>
+			<img class="displayed"src="images/braid_mohawk.jpg" /> 				    	
+                <!--a data-role="button" data-transition="fade" data-theme="b" href="#page1" data-icon="star" data-iconpos="left">
+                    
+                </a>
+           
+           <!-mag cover-->             
+           </div>
+           		<ul data-role="listview" data-inset="true"data-transition="fade" data-theme="b">
+	 
+           		<li data-theme="b"data-icon="star" data-iconpos="left">
+                <!--data-transition="fade" data-theme="b"-->
+                <a href="#register" data-icon="star" data-iconpos="left">
+                <h3>Register<h3/>
+                </a>
+                </li>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        <!--END of Page1-->
+        <div data-role="page" data-theme="a" id="login">
+            <div data-theme="a" data-role="header">
+                <h4>
+                    Login
+                </h4>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#home" data-icon="back" data-iconpos="left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Email
+                        </label>
+                        <input id="textinput1" placeholder="Jb@bballs.com" value="" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            Password
+                        </label>
+                        <input id="textinput2" placeholder="Password " value="" type="password" />
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#account" data-icon="star" data-iconpos="left">
+                    Submit
+                </a>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        
+        <div>
+        	
+        </div>
+        <!--END of HOME Page-->
+       <div data-role="page" data-theme="a" id="account">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Women
+                </h3>
+                <a href="#home" id="logbtn">Logout</a>
+            </div>
+            <div data-role="content">
+            	<ul data-role="listview">
+            		<li>
+            			<a href="#hair1" id="hair1Link">
+            			<img src="images/braid_mohawk.jpg" />
+            			<h3>Mohawk Braids</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<div class="ui-grid-c">
+            			<div class="ui-block-a">
+	            			<a href="#rate" id="rate" data-role="button">Rate This</a>
+	            		</div>
+	            		<div class="ui-block-b">
+	            			<a href="#editFormPage" id="edit" data-role="button">Edit Rating</a>
+	            		</div>
+	            		<div class="ui-block-c">
+	            			<a href="#displayPage" id="display" data-role="button">Display Rating</a>
+            			</div>
+	            		<div class="ui-block-d">
+	            			<a href="#deletePage" id="delete" data-role="button">Delete Rating</a>
+            			</div>
+            		</div>
+            		<li>
+            			<a href="#hair2" id="hair2Link">
+            			<img src="images/china.png" />
+            			<h3>China Beauty</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="#hair3" id="hair3Link">
+            			<img src="images/helicopter_hair.jpg" />
+            			<h3>Helicopter Hair</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="#hair4" id="hair4Link">
+            			<img src="images/milian.png" />
+            			<h3>Milian Fever</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="#hair5" id="hair5Link">
+            			<img src="images/short.png" />
+            			<h3>Rockstar Short</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="#hair6" id="hair6Link">
+            			<img src="images/straight.png" />
+            			<h3>Classy Straight</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="#hair7" id="hair7Link">
+            			<img src="images/vanessa.jpg" />
+            			<h3>Juicy Look</h3>
+            			<p>Walk the streets with this heat!</p>
+            			</a>
+            		</li>
+            	</ul>
+       		</div>
+            
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+        
+        <!-- hair1 page -->
+        <div data-role="page" id="hair1">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		<div class="ui-grid-b">
+        			<div class="ui-block-a">
+        				
+        			</div>
+        			<div class="ui-block-b">
+        				
+        			</div>
+        			<div class="ui-block-c">
+        				
+        			</div>
+        		</div>
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair2 page -->
+        <div data-role="page" id="hair2">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair3 page -->
+        <div data-role="page" id="hair3">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair4 page -->
+        <div data-role="page" id="hair4">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair5 page -->
+        <div data-role="page" id="hair5">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair6 page -->
+        <div data-role="page" id="hair6">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- hair7 page -->
+        <div data-role="page" id="hair7">
+        	<div data-role="header">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- rate page -->
+        <div data-role="page" id="rate">
+        	<div data-role="header">
+        	
+        	</div>
+        	
+        	<div data-role="content">
+        		<form action="" method="post" id="rateForm">
+        		<div>
+        			<label for="slider-0">How hot is this?</label>
+					<input type="range" name="slider" id="slider-0" value="1" min="0" max="10" />
+        		</div>
+        		<div>
+        			<label for="fav">Add her as a favorite?</label>
+        			<fieldset data-role="controlgroup" data-mini="true">
+						<label for="yes">Yes</label>
+						<input type="radio" name="radio-choice-1" id="yes" value="Yes" />
+						
+						<label for="no">No</label>
+						<input type="radio" name="radio-choice-1" id="no" value="No"  />
+					</fieldset>
+        		</div>
+        		<div data-role="fieldcontain">
+					<label for="textarea">Comments:</label>
+					<textarea name="textarea" id="comment" placeholder="Wow this hairstyle is awesome!">
+						
+					</textarea>
+        		</div>
+        		<div>
+        			<label for="email">Enter your email to receive updates on this hairstyle!</label>
+        			<input type="email" name="email" placeholder="email@email.com" id="email" />
+        		</div>
+        		<div>
+        			<input type="submit" id="submit" value="Submit" data-inline="true" />
+        		</div>
+        		</form>
+        	</div>
+        	
+        	<div data-role="footer">
+        		
+        	</div>
+        </div>
+        
+        <!-- edit form page -->
+        <div data-role="page" id="editFormPage">
+        	<div data-role="header">
+        		<h1>Edit Form</h1>
+        	</div>
+        	
+        	<div data-role="content">
+        		<form action="" method="post" id="editForm">
+        			<div>
+	        			<label for="slider-0">How hot is this?</label>
+						<input type="range" name="slider" id="slider-0" value="1" min="0" max="10" />
+	        		</div>
+	        		<div>
+	        			<label for="fav">Add her as a favorite?</label>
+	        			<fieldset data-role="controlgroup" data-mini="true">
+							<label for="yes">Yes</label>
+							<input type="radio" name="radio-choice-1" id="yes" value="Yes" />
+							
+							<label for="no">No</label>
+							<input type="radio" name="radio-choice-1" id="no" value="No"  />
+						</fieldset>
+	        		</div>
+	        		<div data-role="fieldcontain">
+						<label for="textarea">Comments:</label>
+						<textarea name="textarea" id="comment" placeholder="Wow this hairstyle is awesome!">
+							
+						</textarea>
+	        		</div>
+	        		<div>
+	        			<label for="email">Enter your email to receive updates on this hairstyle!</label>
+	        			<input type="email" name="email" value="" placeholder="email@email.com" id="email" />
+	        		</div>
+	        		<div>
+	        			<input type="submit" id="editSub" value="Submit" data-inline="true" />
+	        		</div>	
+        		</form>
+        	</div>
+        </div>
+        
+        <!-- display page -->
+        <div data-role="page" id="displayPage">
+        	<div data-role="header" data-position="fixed">
+        		
+        	</div>
+        	
+        	<div data-role="content">
+        		<div id="dataPlay">
+				</div>
+        	</div>
+        	
+        	<div data-role="footer" data-position="fixed">
+        		
+        	</div>
+        </div>
+        
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>    </body>
+</html>
